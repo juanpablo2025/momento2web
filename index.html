@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EMPRESA ZZ</title>
+
+	<link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+
+<body>
+	<section id="background">
+
+		<section id="title">
+			<h1>EMPRESA ZZ</h1>
+		</section>
+
+
+		<section id="login">
+			<form action="#">
+				<section id="validar"></section>
+				<p class="inputText">Usuario</p>
+				<input type="text" id="nombre" class="forms" required>
+				<p class="inputText">Contraseña</p>
+				<input type="password" id="contrasena" class="forms" required>
+
+				<section id="loginbutton">
+					<button type="submit" id="inicioSesion">Iniciar</button>
+				</section>
+			</form>
+		</section>
+		<section id="menu">
+			<section id="column1">
+				<section>
+					<button id="portatil" class="btnPortatil">Portátil</button>
+				</section>
+				<section>
+					<button id="celular" class="btnCelular">Celular</button>
+				</section>
+			</section>
+			<section id="column2">
+				<section>
+					<button id="cliente" class="btnUsuario">Cliente</button>
+				</section>
+				<section>
+					<button id="salir">Salir</button>
+				</section>
+			</section>
+		</section>
+
+		<section id="formularios">
+		</section>
+
+		<section id="formPortatil">
+			<form id="formIngresoDatos" action="#">
+				<h1>Portátil</h1>
+				<p>Nombre:</p>
+				<input type="text" id="nombrePl" class="forms" required>
+				<p>Referencia:</p>
+				<input type="text" id="referenciaPl" class="forms" required>
+				<p>Código:</p>
+				<input type="text" id="codigoPl" class="forms" required>
+				<p>Valor:</p>
+				<input type="text" id="valorPl" class="forms" required>
+				<p>Cantidad:</p>
+				<input type="text" id="cantidadPl" class="forms" required>
+				<p>Imágen:</p>
+				<input type="file" id="imagenPl" class="forms">
+				<button type="submit" id="guardarPl" class="guardar">Guardar</button>
+				<button type="button" id="btnVolverPl" class="btnVolver">Volver</button>
+			</form>
+		</section>
+		<section id="formCelular">
+			<form id="formIngresoDatos" action="#">
+				<h1>Celular</h1>
+				<p>Nombre:</p>
+				<input type="text" id="nombreCr" class="forms" required>
+				<p>Referencia:</p>
+				<input type="text" id="referenciaCr" class="forms" required>
+				<p>Código:</p>
+				<input type="text" id="codigoCr" class="forms" required>
+				<p>Valor:</p>
+				<input type="text" id="valorCr" class="forms" required>
+				<p>Cantidad:</p>
+				<input type="text" id="cantidadCr" class="forms" required>
+				<p>Imágen:</p>
+				<input type="file" id="imagenCr" class="forms" required>
+
+				<button id="guardarCr" class="guardar">Guardar</button>
+				<button type="button" id="btnVolverCel" class="btnVolver">Volver</button>
+			</form>
+		</section>
+		<section id="formCliente">
+			<form id="formIngresoDatos" action="#">
+				<h1>Cliente</h1>
+				<p>Nombre: </p>
+				<input type="text" id="nombreCe" class="forms" required>
+				<p>Documento: </p>
+				<input type="text" id="documentoCe" class="forms" required>
+				<p>Celular: </p>
+				<input type="text" id="telefonoCe" class="forms" required>
+				<p>Dirección: </p>
+				<input type="text" id="direccionCe" class="forms" required>
+				<p>Correo: </p>
+				<input type="email" id="emailCe" class="forms" required>
+				<button id="guardarCe" class="guardar">Guardar</button>
+				<button type="button" id="btnVolverCli" class="btnVolver">Volver</button>
+			</form>
+		</section>
+		<section id="cartaP" class="ocultar">
+			<img src="" id="imgUpload">
+			<p id="dato2"></p>
+			<p id="dato1"></p>
+			<p id="dato3"></p>
+			<p id="dato4"></p>
+			<p id="dato5"></p>
+			<button type="button" id="btnVolverP" class="btnVolver">Volver</button>
+		</section>
+		<section id="cartaC" class="ocultar">
+			<h1>Cliente</h1>
+			<section id="cardU">
+				<p id="dato6"></p>
+				<p id="dato7"></p>
+				<p id="dato8"></p>
+				<p id="dato9"></p>
+				<p id="dato10"></p>
+
+			</section>
+			<button type="button" id="btnVolverUS" class="btnVolver">Volver</button>
+		</section>
+	</section>
+
+
+
+
+
+</body>
+
+<script src='main.js'></script>
+
+</html>

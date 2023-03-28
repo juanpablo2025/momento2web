@@ -11,13 +11,15 @@ const volverCel = document.querySelector('#btnVolverCel');
 const volverCli = document.querySelector('#btnVolverCli');
 const volverP = document.querySelector('#btnVolverP');
 const volverC = document.querySelector('#btnVolverC');
+const usuario ='usuario';
+const contra='usuario';
 
 const iniciarSesion = () => {
     const nombre = document.querySelector('#nombre');
     const contrasena = document.querySelector('#contrasena');
     const validar = document.querySelector('#validar');
 
-    if ((nombre.value == 'usuario' && contrasena.value == 'usuario')) {
+    if ((nombre.value == usuario && contrasena.value == contra)) {
         const inicio = document.querySelector('#login');
         
         inicio.classList.add('ocultar');

@@ -3,12 +3,12 @@ const salir = document.querySelector('#salir');
 const portatil = document.querySelector('#portatil');
 const cliente = document.querySelector('#cliente');
 const celular = document.querySelector('#celular');
-const guardarPl = document.querySelector('#guardarPl');
-const guardarCr = document.querySelector('#guardarCr');
-const guardarCe = document.querySelector('#guardarCe');
-const volverPl = document.querySelector('#btnVolverPl');
-const volverCel = document.querySelector('#btnVolverCel');
-const volverCli = document.querySelector('#btnVolverCli');
+const guardarPortatil = document.querySelector('#guardarPortatil');
+const guardarCelular = document.querySelector('#guardarCelular');
+const guardarCliente = document.querySelector('#guardarCliente');
+const volverPortatil = document.querySelector('#btnVolverPortail');
+const volverCelular = document.querySelector('#btnVolverCelular');
+const volverCliente = document.querySelector('#btnVolverCliente');
 const volverP = document.querySelector('#btnVolverP');
 const volverC = document.querySelector('#btnVolverC');
 const usuario ='usuario';
@@ -54,43 +54,43 @@ const regresar =()=>{
     const formPortatil = document.querySelector('#formPortatil');
     const formCelular = document.querySelector('#formCelular');
     const formCliente = document.querySelector('#formCliente');
-    const cartaP = document.querySelector('#cartaP');
-    const cartaC = document.querySelector('#cartaC');
+    const cardP = document.querySelector('#cardP');
+    const cardC = document.querySelector('#cardC');
     menu.classList.remove('ocultar');
     formPortatil.classList.remove('ocultar');
     formCliente.classList.remove('ocultar');
     formCelular.classList.remove('ocultar');
-    cartaP.classList.add('ocultar');
-    cartaC.classList.add('ocultar');
+    cardP.classList.add('ocultar');
+    cardC.classList.add('ocultar');
 
 }
 
 const menuPortatil = () => {
     const menu = document.querySelector('#menu');
     const formPortatil = document.querySelector('#formPortatil');
-    const cartaP = document.querySelector('#cartaP');
-    const cartaC = document.querySelector('#cartaC');
+    const cardP = document.querySelector('#cardP');
+    const cardC = document.querySelector('#cardC');
 
     menu.classList.add('ocultar');
     formPortatil.classList.remove('ocultar');
 
-    cartaP.classList.add('ocultar');
-    cartaC.classList.add('ocultar');
+    cardP.classList.add('ocultar');
+    cardC.classList.add('ocultar');
 }
 
 const menuCelular = () => {
     const menu = document.querySelector('#menu');
     const formPortatil = document.querySelector('#formPortatil');
     const formCelular = document.querySelector('#formCelular');
-    const cartaP = document.querySelector('#cartaP');
-    const cartaC = document.querySelector('#cartaC');
+    const cardP = document.querySelector('#cardP');
+    const cardC = document.querySelector('#cardC');
 
     menu.classList.add('ocultar');
     formPortatil.classList.add('ocultar');
     formCelular.classList.remove('ocultar');
 
-    cartaP.classList.add('ocultar');
-    cartaC.classList.add('ocultar');
+    cardP.classList.add('ocultar');
+    cardC.classList.add('ocultar');
 }
 
 const menuCliente = () => {
@@ -98,41 +98,41 @@ const menuCliente = () => {
     const formPortatil = document.querySelector('#formPortatil');
     const formCelular = document.querySelector('#formCelular');
     const formCliente = document.querySelector('#formCliente');
-    const cartaP = document.querySelector('#cartaP');
-    const cartaC = document.querySelector('#cartaC');
+    const cardP = document.querySelector('#cardP');
+    const cardC = document.querySelector('#cardC');
 
     menu.classList.add('ocultar');
     formPortatil.classList.add('ocultar');
     formCelular.classList.add('ocultar');
     formCliente.classList.remove('ocultar');
-    cartaP.classList.add('ocultar');
-    cartaC.classList.add('ocultar');
+    cardP.classList.add('ocultar');
+    cardC.classList.add('ocultar');
 }
 
-const cartaPl = () => {
-    const cartaP = document.querySelector('#cartaP');
+const cardPortatil = () => {
+    const cardP = document.querySelector('#cardP');
     const formPortatil = document.querySelector('#formPortatil');
     const formCelular = document.querySelector('#formCelular');
     const formCliente = document.querySelector('#formCliente');
 
-    const nombrePl = document.querySelector('#nombrePl');
-    const referenciaPl = document.querySelector('#referenciaPl');
-    const codigoPl = document.querySelector('#codigoPl');
-    const valorPl = document.querySelector('#valorPl');
-    const cantidadPl = document.querySelector('#cantidadPl');
-    const imagenPl = document.querySelector('#imagenPl');
+    const nombrePortatil = document.querySelector('#nombrePortatil');
+    const referenciaPortatil = document.querySelector('#referenciaPortatil');
+    const codigoPortatil = document.querySelector('#codigoPortatil');
+    const valorPortatil = document.querySelector('#valorPortatil');
+    const cantidadPortatil = document.querySelector('#cantidadPortatil');
+    const imagenPl = document.querySelector('#imagenPortatil');
 
-    if ((codigoPl.value != '') && (nombrePl.value != '') && (referenciaPl.value != '') && (valorPl.value != '') && (cantidadPl.value != '') && (imagenPl.value != '')) {
-        cartaP.classList.remove('ocultar');
+    if ((codigoPortatil.value != '') && (nombrePortatil.value != '') && (referenciaPortatil.value != '') && (valorPortatil.value != '') && (cantidadPortatil.value != '') && (imagenPortatil.value != '')) {
+        cardP.classList.remove('ocultar');
         formPortatil.classList.add('ocultar');
         formCelular.classList.add('ocultar');
         formCliente.classList.add('ocultar');
 
-        const dato1 = document.querySelector('#dato1');
-        const dato2 = document.querySelector('#dato2');
-        const dato3 = document.querySelector('#dato3');
-        const dato4 = document.querySelector('#dato4');
-        const dato5 = document.querySelector('#dato5');
+        const nombrecardp = document.querySelector('#nombrecardp');
+        const codigo = document.querySelector('#codigo');
+        const referencia = document.querySelector('#referencia');
+        const precio = document.querySelector('#precio');
+        const cantidad = document.querySelector('#cantidad');
         const imgUpload = document.querySelector('#imgUpload');
 
         const imagen = imagenPl.files;
@@ -141,106 +141,106 @@ const cartaPl = () => {
         
       
         
-        dato2.innerHTML = 'Nombre: ' + nombrePl.value;
-        dato1.innerHTML = 'Codigo: ' + codigoPl.value;
-        dato3.innerHTML = 'Referencia: ' + referenciaPl.value;
-        dato4.innerHTML = 'Precio: ' + valorPl.value;
-        dato5.innerHTML = 'Cantidad: ' + cantidadPl.value;
+        nombrecardp.innerHTML = 'Nombre: ' + nombrePortatil.value;
+        codigo.innerHTML = 'Codigo: ' + codigoPortatil.value;
+        referencia.innerHTML = 'Referencia: ' + referenciaPortatil.value;
+        precio.innerHTML = 'Precio: ' + valorPortatil.value;
+        cantidad.innerHTML = 'Cantidad: ' + cantidadPortatil.value;
         imgUpload.src = ruta;
 
         
-        nombrePl.value = '';
-        codigoPl.value = '';
-        referenciaPl.value = '';
-        valorPl.value = '';
-        cantidadPl.value = '';
-        imagenPl.src = '';
+        nombrePortatil.value = '';
+        codigoPortatil.value = '';
+        referenciaPortatil.value = '';
+        valorPortatil.value = '';
+        cantidadPortatil.value = '';
+        imagenPortatil.src = '';
     }
 }
 
-const cartaCr = () => {
-    const cartaP = document.querySelector('#cartaP');
+const cardCelular = () => {
+    const cardP = document.querySelector('#cardP');
     const formPortatil = document.querySelector('#formPortatil');
     const formCelular = document.querySelector('#formCelular');
     const formCliente = document.querySelector('#formCliente');
 
-    const nombreCr = document.querySelector('#nombreCr');
-    const referenciaCr = document.querySelector('#referenciaCr');
-    const codigoCr = document.querySelector('#codigoCr');
-    const valorCr = document.querySelector('#valorCr');
-    const cantidadCr = document.querySelector('#cantidadCr');
-    const imagenCr = document.querySelector('#imagenCr');
+    const nombreCelular = document.querySelector('#nombreCelular');
+    const referenciaCelular = document.querySelector('#referenciaCelular');
+    const codigoCelular = document.querySelector('#codigoCelular');
+    const valorCelular = document.querySelector('#valorCelular');
+    const cantidadCelular = document.querySelector('#cantidadCelular');
+    const imagenCelular = document.querySelector('#imagenCelular');
 
-    if ((codigoCr.value != '') && (nombreCr.value != '') && (referenciaCr.value != '') && (valorCr.value != '') && (cantidadCr.value != '') && (imagenCr.value != '')) {
-        cartaP.classList.remove('ocultar');
+    if ((codigoCelular.value != '') && (nombreCelular.value != '') && (referenciaCelular.value != '') && (valorCelular.value != '') && (cantidadCelular.value != '') && (imagenCelular.value != '')) {
+        cardP.classList.remove('ocultar');
         formPortatil.classList.add('ocultar');
         formCelular.classList.add('ocultar');
         formCliente.classList.add('ocultar');
 
-        const dato1 = document.querySelector('#dato1');
-        const dato2 = document.querySelector('#dato2');
-        const dato3 = document.querySelector('#dato3');
-        const dato4 = document.querySelector('#dato4');
-        const dato5 = document.querySelector('#dato5');
+        const nombrecardp = document.querySelector('#nombrecardp');
+        const codigo = document.querySelector('#codigo');
+        const referencia = document.querySelector('#referencia');
+        const precio = document.querySelector('#precio');
+        const cantidad = document.querySelector('#cantidad');
         const imgUpload = document.querySelector('#imgUpload');
 
-        const imagen = imagenCr.files;
+        const imagen = imagenCelular.files;
         const ruta = URL.createObjectURL(imagen[0]);
 
       
-        dato2.innerHTML = 'Nombre:' + nombreCr.value;
-        dato1.innerHTML = 'Codigo: ' + codigoCr.value;
-        dato3.innerHTML = 'Referencia:' + referenciaCr.value;
-        dato4.innerHTML = 'Precio: ' + valorCr.value;
-        dato5.innerHTML = 'Cantidad: ' + cantidadCr.value;
+        nombrecardp.innerHTML = 'Nombre:' + nombreCelular.value;
+        codigo.innerHTML = 'Codigo: ' + codigoCelular.value;
+        referencia.innerHTML = 'Referencia:' + referenciaCelular.value;
+        precio.innerHTML = 'Precio: ' + valorCelular.value;
+        cantidad.innerHTML = 'Cantidad: ' + cantidadCelular.value;
         imgUpload.src = ruta;
 
        
-        nombreCr.value = '';
-        codigoCr.value = '';
-        referenciaCr.value = '';
-        valorCr.value = '';
-        cantidadCr.value = '';
-        imagenCr.src = '';
+        nombreCelular.value = '';
+        codigoCelular.value = '';
+        referenciaCelular.value = '';
+        valorCelular.value = '';
+        cantidadCelular.value = '';
+        imagenCelular.src = '';
     }
 }
 
-const cartaCe = () => {
-    const cartaC = document.querySelector('#cartaC');
+const cardCliente = () => {
+    const cardC = document.querySelector('#cardC');
     const formPortatil = document.querySelector('#formPortatil');
     const formCelular = document.querySelector('#formCelular');
     const formCliente = document.querySelector('#formCliente');
 
-    const nombreCe = document.querySelector('#nombreCe');
-    const documentoCe = document.querySelector('#documentoCe');
-    const telefonoCe = document.querySelector('#telefonoCe');
-    const direccionCe = document.querySelector('#direccionCe');
-    const emailCe = document.querySelector('#emailCe');
+    const nombreCliente = document.querySelector('#nombreCliente');
+    const documentoCliente = document.querySelector('#documentoCliente');
+    const telefonoCliente = document.querySelector('#telefonoCliente');
+    const direccionCliente = document.querySelector('#direccionCliente');
+    const emailCliente = document.querySelector('#emailCliente');
 
-    if ((documentoCe.value != '') && (nombreCe.value != '') && (telefonoCe.value != '') && (direccionCe.value != '') && (emailCe.value != '')) {
-        cartaC.classList.remove('ocultar');
+    if ((documentoCliente.value != '') && (nombreCliente.value != '') && (telefonoCliente.value != '') && (direccionCliente.value != '') && (emailCliente.value != '')) {
+        cardC.classList.remove('ocultar');
         formPortatil.classList.add('ocultar');
         formCelular.classList.add('ocultar');
         formCliente.classList.add('ocultar');
 
-        const dato6 = document.querySelector('#dato6');
-        const dato7 = document.querySelector('#dato7');
-        const dato8 = document.querySelector('#dato8');
-        const dato9 = document.querySelector('#dato9');
-        const dato10 = document.querySelector('#dato10');
+        const nombreclie = document.querySelector('#nombreclie');
+        const cedula = document.querySelector('#cedula');
+        const telefono = document.querySelector('#telefono');
+        const direccion = document.querySelector('#direccion');
+        const correo = document.querySelector('#correo');
 
         
-        dato7.innerHTML = 'Nombre: ' + nombreCe.value;
-        dato6.innerHTML = 'CC: '+documentoCe.value;
-        dato8.innerHTML = 'Celular :' + telefonoCe.value;
-        dato9.innerHTML = 'Dirección :' + direccionCe.value;
-        dato10.innerHTML ='Correo: ' + emailCe.value;
+        nombreclie.innerHTML = 'Nombre: ' + nombreCliente.value;
+        cedula.innerHTML = 'CC: '+documentoCliente.value;
+        telefono.innerHTML = 'Celular :' + telefonoCliente.value;
+        direccion.innerHTML = 'Dirección :' + direccionCliente.value;
+        correo.innerHTML ='Correo: ' + emailCliente.value;
 
-        documentoCe.value = '';
-        nombreCe.value = '';
-        telefonoCe.value = '';
-        direccionCe.value = '';
-        emailCe.value = '';
+        documentoCliente.value = '';
+        nombreCliente.value = '';
+        telefonoCliente.value = '';
+        direccionCliente.value = '';
+        emailCliente.value = '';
     }
 }
 
@@ -250,11 +250,11 @@ salir.addEventListener('click', cerrarSesion);
 portatil.addEventListener('click', menuPortatil);
 celular.addEventListener('click', menuCelular);
 cliente.addEventListener('click', menuCliente);
-guardarPl.addEventListener('click', cartaPl);
-guardarCr.addEventListener('click', cartaCr);
-guardarCe.addEventListener('click', cartaCe);
-btnVolverPl.addEventListener('click', regresar);
-btnVolverCel.addEventListener('click', regresar);
-btnVolverCli.addEventListener('click', regresar);
+guardarPortatil.addEventListener('click', cardPortatil);
+guardarCelular.addEventListener('click', cardCelular);
+guardarCliente.addEventListener('click', cardCliente);
+btnVolverPortatil.addEventListener('click', regresar);
+btnVolverCelular.addEventListener('click', regresar);
+btnVolverCliente.addEventListener('click', regresar);
 btnVolverP.addEventListener('click', regresar);
 btnVolverUS.addEventListener('click', regresar);

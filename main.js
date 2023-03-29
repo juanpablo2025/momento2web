@@ -31,7 +31,7 @@ const iniciarSesion = () => {
     } else if (nombre.value == '' && contrasena.value == '') {
         validar.textContent = '';
     } else {
-        validar.textContent = alert( 'Error vuelve a intentarlo');
+        validar.textContent = alert( 'Contraseña incorrecta, vuelve a intentarlo');
     }
 }
 const cerrarSesion = () => {
